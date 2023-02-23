@@ -13,6 +13,7 @@ class MailThread(models.AbstractModel):
                         thread_id=None):
         _logger.info('*************')
         _logger.info(self.env.user.id)
+
         _logger.info('********')
         return super(MailThread, self).message_process(model, message, custom_values,
                                                        save_original, strip_attachments, thread_id)
