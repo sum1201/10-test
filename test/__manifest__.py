@@ -9,7 +9,7 @@
         -
     """,
     "depends": ["base", "mail"],
-    "init_xml": [ ],
+    "init_xml": [],
     "data": [
 
     ],
