@@ -8,7 +8,7 @@
     'description': """
         -
     """,
-    "depends": ["base"],
+    "depends": ["base", "mail"],
     "init_xml": [],
     "data": [
 
