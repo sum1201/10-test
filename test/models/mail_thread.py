@@ -1,4 +1,4 @@
-from odoo import models, tools
+from odoo import api, models, tools
 import logging
 
 _logger = logging.getLogger(__name__)
@@ -7,6 +7,7 @@ _logger = logging.getLogger(__name__)
 class MailThread(models.AbstractModel):
     _inherit = 'mail.thread'
 
+    @api.model
     def message_process(self, model, message, custom_values=None,
                         save_original=False, strip_attachments=False,
                         thread_id=None):
