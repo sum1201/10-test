@@ -4,7 +4,7 @@ import logging
 _logger = logging.getLogger(__name__)
 
 
-class MailThread(models.Model):
+class MailThread(models.AbstractModel):
     _inherit = 'mail.thread'
 
     def message_process(self, model, message, custom_values=None,
